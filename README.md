@@ -1,4 +1,5 @@
 Signup Form Component
+
 This project demonstrates a signup form component built using React with TypeScript. The component follows several best practices to ensure code readability, maintainability, and user experience. Below are the key best practices employed in this project:
 
 Key Best Practices:
