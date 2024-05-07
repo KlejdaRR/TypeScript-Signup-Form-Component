@@ -40,7 +40,7 @@ const useSignUpForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("https://django-dev.aakscience.com/signup/", formData);
+      await axios.post("/api/", formData);
       console.log('Signup successful');
       setFormData({
         user_type: 'researcher',

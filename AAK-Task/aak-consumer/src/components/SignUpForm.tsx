@@ -4,12 +4,12 @@ import TextInput from './TextInput';
 import SelectInput from './SelectInput';
 
 const SignUpForm: React.FC = () => {
-  const { formData, handleChange, handleSubmit } = useSignUpForm();
+  const { formData, handleChange, handleSelectChange, handleSubmit } = useSignUpForm();
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="signup-form">
-        <SelectInput label="User Type" name="user_type" value={formData.user_type} onChange={handleChange} />
+        <SelectInput label="User Type" name="user_type" value={formData.user_type} onChange={handleSelectChange} />
         <TextInput label="First Name" name="first_name" type="text" value={formData.first_name} onChange={handleChange} />
         <TextInput label="Last Name" name="last_name" type="text" value={formData.last_name} onChange={handleChange} />
         <TextInput label="Username" name="username" type="text" value={formData.username} onChange={handleChange} />
