@@ -17,3 +17,6 @@ Event handlers (handleChange, handleSelectChange, and handleSubmit) are defined 
 Accessibility features such as appropriate aria-label attributes are added to form elements to ensure compatibility with assistive technologies, improving usability for all users.
 7. Clear and Concise Code:
 The codebase is organized and well-commented, adhering to best practices for readability and maintainability.
+8.Environment Variables:
+Use of proxies for hardcoded URLs like 'https://django-dev.aakscience.com/signup/'. Instead, using environment variables to store such sensitive information, making it easier to manage different environments (development, staging, production).
+
